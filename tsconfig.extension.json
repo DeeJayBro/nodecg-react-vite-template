@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+        "target": "es2016",
+        "module": "commonjs",
+        "rootDir": "src/extension",
+        "moduleResolution": "node",
+        "outDir": "extension",
+        "esModuleInterop": true,
+        "forceConsistentCasingInFileNames": true,
+        "strict": true,
+        "skipLibCheck": true,
+        "resolveJsonModule": true,
+        "noImplicitAny": true,
+    },
+    "include": [
+        "src/extension/**/*.ts"
+    ],
+    "extends": "./tsconfig.base.json"
+}

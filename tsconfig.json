@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+        "target": "ESNext",
+        "module": "ESNext",
+        "jsx": "react-jsx",
+        "strict": true,
+        "moduleResolution": "Node",
+        "types": [
+            "@nodecg/types/augment-window"
+          ],
+    },
+    "references": [{ "path": "./tsconfig.node.json" }],
+    "extends": "./tsconfig.base.json"
+}

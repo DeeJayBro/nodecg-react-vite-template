@@ -1,0 +1,54 @@
+{
+  "name": "nodecg-react-vite-template",
+  "packageManager": "yarn@4.1.1",
+  "version": "1.0.0",
+  "nodecg": {
+    "compatibleRange": "^2.1.1",
+    "dashboardPanels": [
+      {
+        "name": "example",
+        "title": "Example Panel",
+        "width": 5,
+        "file": "example.html",
+        "headerColor": "#525F78"
+      }
+    ],
+    "graphics": [
+      {
+        "file": "example.html",
+        "width": 1920,
+        "height": 1080,
+        "singleInstance": false
+      }
+    ]
+  },
+  "scripts": {
+    "dev:browser": "vite",
+    "dev": "run-p dev:browser watch:extension",
+    "watch": "vite build --watch",
+    "watch:extension": "tsc -b tsconfig.extension.json -w",
+    "build:browser": "vite build",
+    "build:extension": "tsc -b tsconfig.extension.json",
+    "build": "run-p 'build:*'",
+    "schema-types": "nodecg schema-types"
+  },
+  "devDependencies": {
+    "@nodecg/types": "^2.1.12",
+    "@types/react": "^18.2.75",
+    "@types/react-dom": "^18.2.24",
+    "@vitejs/plugin-react": "^4.3.1",
+    "globby": "^14.0.1",
+    "minimatch": "^9.0.3",
+    "npm-run-all": "^4.1.5",
+    "typescript": "~5.4.4",
+    "vite": "^5.4.3"
+  },
+  "dependencies": {
+    "@mantine/core": "^7.12.2",
+    "@mantine/hooks": "^7.12.2",
+    "@nodecg/react-hooks": "^1.0.3",
+    "node-fetch": "^3.3.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
